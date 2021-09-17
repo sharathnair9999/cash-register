@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #EDE9FE
+  ;
+}
+
+#bill{
+  margin: 1rem;
+}
+
+#cash-given{
+  margin: 1rem;
+}
+
+#check{
+  padding:1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color:  blueviolet;
+  color: white;
+}
+#check:hover{
+  background-color: #A78BFA;
+  cursor: pointer;
+}
+
+.entire{
+  text-align: center;
+}
+
+.heading{
+  text-align: center;
+  padding: 1rem 5rem;
+  background-image:  linear-gradient(#4C1D95, #A78BFA  );
+  font-size: 2rem;
+  color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-weight: bold;
+}
+
+#return-table{
+  padding: 1rem;
+  margin: auto;
+}
+.noOfNotes{
+  padding: 2rem;
+}

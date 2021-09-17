@@ -8,14 +8,38 @@
   <title>Cash Register</title>
 </head>
 <body>
-<h1>Cash Register</h1>
+<nav class="heading">Cash Register</nav>
+<div class="entire"><p>Here you can see the minimum number of notes to be returned for a certain bill amount in exchange with the cash given.</p>
  <label for="bill">Bill Amount</label> <input type="number" id="bill">
  <br>
  <label for="cash-given">Cash Given</label> <input type="number" id="cash-given">
  <br>
  <button id="check">Check</button>
+<h2 id = "outputMsg" ></h2>
+<table id = "return-table">
+  <caption>Return Change</caption>
+  <tr>
+    <th>No. of Notes</th>
+    <td class="noOfNotes"></td>
+    <td class="noOfNotes"></td>
+    <td class="noOfNotes"></td>
+    <td class="noOfNotes"></td>
+    <td class="noOfNotes"></td>
+    <td class="noOfNotes"></td>
+  </tr>
+  <tr>
+    <th>Notes</th>
+    <td>2000</td>
+    <td>500</td>
+    <td>100</td>
+    <td>20</td>
+    <td>10</td>
+    <td>1</td>
+  </tr>
+</table>
 
 
+</div>
 
   <script src="app.js"></script>
 </body>
