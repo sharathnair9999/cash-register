@@ -3,8 +3,9 @@ var cashGiven = document.querySelector("#cash-given")
 var checkBtn = document.querySelector("#check")
 var outputMessage = document.querySelector("#outputMsg")
 var noOfNote = document.querySelectorAll(".noOfNotes")
+var tableOfNotes = document.querySelector("#return-table")
 var notes = [2000, 500, 100, 20, 10, 5, 1]
-cashGiven.style.display = bill<=0
+tableOfNotes.style.display = "none"
 function validateChange(){
   var bill = Number(billAmount.value)
   var cash = Number(cashGiven.value)
@@ -22,6 +23,7 @@ function validateChange(){
  }
 }
 function calculateChange(balanceCash){
+  tableOfNotes.style.display="inline"
   for(let i =0;i<notes.length;i++){
     const noOfNotes = Math.trunc(balanceCash/notes[i]);
     balanceCash = balanceCash%notes[i];
